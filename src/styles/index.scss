@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+@import url('../../node_modules/tailwindcss/base.css');
+@import url('../../node_modules/tailwindcss/components.css');
+@import url('../../node_modules/tailwindcss/utilities.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .link {
+        @apply cursor-pointer;
+    }
+    .button {
+        @apply bg-gradient-to-b to-indigo-500 text-sm text-white from-indigo-600 p-2 rounded-md border border-indigo-300 focus:ring-1 focus:ring-indigo-500 focus:outline-none active:from-indigo-500;
+    }
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito';
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: all 0.5s ease-in-out;
+}
